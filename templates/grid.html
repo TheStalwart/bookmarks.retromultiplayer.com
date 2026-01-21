@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookmarks</title>
+
+    <style>
+        :root {
+            --msedge-titlebar-background-color: #38393C;
+            --msedge-toolbar-background-color: #56585D;
+            --msedge-toolbar-text-color: #E1E1E9;
+
+            background-color: var(--msedge-titlebar-background-color);
+
+            font-family: "system-ui", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--msedge-toolbar-text-color);
+        }
+
+        body {
+            display: grid;
+            margin: 1.25rem;
+            gap: 1.25rem;
+            align-items: start;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1rem 2rem;
+        }
+
+        /* mobile: single column */
+        body {
+            grid-template-columns: 1fr;
+        }
+
+        /* Two columns at medium widths */
+        @media (min-width: 600px) {
+            body {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Three columns at larger widths */
+        @media (min-width: 1000px) {
+            body {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        section {
+            padding: 0.6rem 0.9rem;
+            border-radius: 6px;
+            background: var(--msedge-toolbar-background-color);
+
+            break-inside: avoid;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        h1 {
+            /* Keep it for semantic structure, but hide visually */
+            display: none;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+
+            margin: 0;
+        }
+
+        ul {
+            line-height: 20px;
+            padding-inline-start: 25px;
+        }
+
+        li {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: var(--msedge-toolbar-text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bookmarks</h1>
+
+    {% for group in data.bookmarks %}
+    <section>
+        <h2>{{ group.group_title }}</h2>
+        <ul>
+            {% for link in group.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endfor %}
+
+</body>
+
+</html>
