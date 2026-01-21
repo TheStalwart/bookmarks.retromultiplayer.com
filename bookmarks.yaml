@@ -1,0 +1,104 @@
+bookmarks:
+  - group_title: Social
+    links:
+      - title: GMail
+        url: https://mail.google.com/mail/ca/#inbox
+      - title: Facebook
+        url: https://www.facebook.com/
+      - title: Facebook Messenger
+        url: https://www.messenger.com/
+      - title: Instagram DMs
+        url: https://www.instagram.com/direct/inbox/
+      - title: reddit
+        url: https://old.reddit.com/
+      - title: Twitter
+        url: https://twitter.com/
+
+  - group_title: Multimedia
+    links:
+      - title: YouTube
+        url: https://www.youtube.com/feed/subscriptions
+      - title: Twitch
+        url: https://www.twitch.tv/directory/following/live
+      - title: Soundcloud
+        url: https://soundcloud.com/
+      - title: Mixcloud
+        url: https://www.mixcloud.com/
+      - title: Bandcamp
+        url: https://bandcamp.com/Stalwart
+      - title: DI.FM
+        url: https://www.di.fm/channels
+      - title: MyAnimeList
+        url: https://myanimelist.net/animelist/Stalwart88?status=6
+      - title: trakt
+        url: https://app.trakt.tv/users/me/watchlist
+
+  - group_title: News
+    links:
+      - title: Feedly
+        url: https://feedly.com/
+      - title: The Wall Street Journal
+        url: https://www.wsj.com/
+      - title: Financial Times
+        url: https://www.ft.com/
+      - title: Yahoo Finance
+        url: https://finance.yahoo.com/
+
+  - group_title: Banks
+    links:
+      - title: Citadele
+        url: https://online.citadele.lv/
+      - title: Swedbank
+        url: https://www.swedbank.lv/private
+      - title: Luminor
+        url: https://ib.luminor.lv/
+
+  - group_title: TradFi
+    links:
+      - title: TradingView
+        url: https://www.tradingview.com/chart
+      - title: eToro
+        url: https://www.etoro.com/portfolio
+      - title: Luminor Investor
+        url: https://investor.luminorgroup.com/
+      - title: Mintos
+        url: https://www.mintos.com/
+      - title: Finviz
+        url: https://finviz.com/map.ashx
+
+  - group_title: Crypto
+    links:
+      - title: Coinbase
+        url: https://www.coinbase.com/assets
+      - title: COIN360
+        url: https://coin360.com/
+      - title: CoinMarketCap
+        url: https://coinmarketcap.com/
+      - title: Datamish
+        url: https://datamish.com/btcusd
+
+  - group_title: Shopping
+    links:
+      - title: Facebook Marketplace
+        url: https://www.facebook.com/marketplace/
+      - title: KurPirkt.lv
+        url: https://www.kurpirkt.lv/
+      - title: Banknote Tabulator
+        url: https://banknote.retromultiplayer.com/
+      - title: AliExpress
+        url: https://www.aliexpress.com/p/order/index.html
+
+  - group_title: Utilities
+    links:
+      - title: Google Translate
+        url: https://translate.google.com/
+      - title: Google My Maps
+        url: https://www.google.com/maps/d/
+      - title: meteolapa.lv
+        url: https://www.meteolapa.lv/radars
+      - title: AccuWeather
+        url: https://www.accuweather.com/en/lv/riga/225780/hourly-weather-forecast/225780
+      - title: iCloud
+        url: https://www.icloud.com/
+      - title: Travel TODO
+        url: https://www.google.com/maps/d/u/0/edit?hl=en&mid=1jDlFDh74-_vw6c31Uzu4BaKIHg9eT4BG
