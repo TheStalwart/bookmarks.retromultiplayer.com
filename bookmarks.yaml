@@ -57,6 +57,8 @@ bookmarks:
     links:
       - title: TradingView
         url: https://www.tradingview.com/chart
+      - title: TradingHours
+        url: https://www.tradinghours.com/markets/nyse
       - title: eToro
         url: https://www.etoro.com/portfolio
       - title: Luminor Investor
