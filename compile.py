@@ -1,7 +1,6 @@
 import glob
 import os
 import pathlib
-from operator import itemgetter
 from urllib.parse import urlparse
 
 import yaml
