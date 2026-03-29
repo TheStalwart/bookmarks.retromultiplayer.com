@@ -3,6 +3,9 @@
     "ruff.lint.select": [
         "ALL"
     ],
+    "[markdown]": {
+        "files.trimTrailingWhitespace": true
+    },
     "[jsonc]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
