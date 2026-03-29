@@ -2,7 +2,7 @@ import pathlib
 from urllib.parse import urlparse
 
 import yaml
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, TemplateError
 from rich import print as rprint
 from rich.pretty import pprint
 
@@ -34,5 +34,5 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
             output_file_path = OUTPUT_ROOT / template_filename
             with output_file_path.open("w", newline="") as f:
                 f.write(output)
-        except Exception as exc:
+        except (OSError, TemplateError) as exc:
             rprint(f"[red]Error processing {template_filename}: {exc}[/red]")
