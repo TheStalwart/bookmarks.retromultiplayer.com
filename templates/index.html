@@ -45,12 +45,19 @@
 
         ul {
             line-height: 20px;
-            padding-inline-start: 25px;
+            padding-inline-start: 0;
         }
 
         li {
             font-size: 14px;
             font-weight: 600;
+            list-style-position: outside;
+            list-style-type: none;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            padding-left: 24px;
+            background-position: left center;
+            margin-bottom: 4px;
         }
 
         a:link,
@@ -70,7 +77,8 @@
         <h2>{{ group.group_title }}</h2>
         <ul>
             {% for link in group.links %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li style="background-image: url('{{ link.g_favicon_url }}');"><a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
             {% endfor %}
         </ul>
     </section>

@@ -5,6 +5,7 @@ import pathlib
 import yaml
 from rich import print
 from rich.pretty import pprint
+from urllib.parse import urlparse
 from jinja2 import Environment, FileSystemLoader
 
 # Define file paths
@@ -17,6 +18,9 @@ OUTPUT_ROOT = os.path.join(PROJECT_ROOT, "output")
 print(f'Loading [yellow]{BOOKMARKS_YAML_FILE_PATH}[/yellow]')
 with open(os.path.join(PROJECT_ROOT, BOOKMARKS_YAML_FILE_PATH)) as bookmarks_yaml_stream:
     file_contents = yaml.safe_load(bookmarks_yaml_stream)
+    for group in file_contents["bookmarks"]:
+        for bookmark in group["links"]:
+            bookmark["g_favicon_url"] = f"https://www.google.com/s2/favicons?domain={urlparse(bookmark['url']).netloc}"
     pprint(file_contents)
 
     # Load all template files
