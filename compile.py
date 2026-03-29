@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 
 import yaml
 from jinja2 import Environment, FileSystemLoader
-from rich import print
+from rich import print as rprint
 from rich.pretty import pprint
 
 # Define file paths
@@ -15,7 +15,7 @@ TEMPLATE_ROOT = PROJECT_ROOT / "templates"
 OUTPUT_ROOT = PROJECT_ROOT / "output"
 
 # https://stackoverflow.com/a/1774043/5337349
-print(f"Loading [yellow]{BOOKMARKS_YAML_FILE_PATH}[/yellow]")
+rprint(f"Loading [yellow]{BOOKMARKS_YAML_FILE_PATH}[/yellow]")
 with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
     file_contents = yaml.safe_load(bookmarks_yaml_stream)
     for group in file_contents["bookmarks"]:
@@ -30,11 +30,11 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
     for template_file_path in glob.glob(str(TEMPLATE_ROOT / "*.html")):
         template_filename = os.path.basename(template_file_path)
         try:
-            print(f"Processing [yellow]{template_filename}[/yellow]")
+            rprint(f"Processing [yellow]{template_filename}[/yellow]")
             template = env.get_template(template_filename)
             output = template.render(data=file_contents)
             output_file_path = OUTPUT_ROOT / template_filename
             with open(output_file_path, "w", newline="") as f:
                 f.write(output)
         except Exception as exc:
-            print(f"[red]Error processing {template_filename}: {exc}[/red]")
+            rprint(f"[red]Error processing {template_filename}: {exc}[/red]")
