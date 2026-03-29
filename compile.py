@@ -1,3 +1,9 @@
+"""Compile bookmarks from YAML data into HTML templates.
+
+This module loads bookmark data from a YAML file, processes it to add favicon URLs,
+and renders HTML templates using Jinja2 to generate static bookmark pages.
+"""
+
 import pathlib
 from urllib.parse import urlparse
 
