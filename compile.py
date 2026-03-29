@@ -17,7 +17,7 @@ OUTPUT_ROOT = PROJECT_ROOT / "output"
 
 # https://stackoverflow.com/a/1774043/5337349
 print(f"Loading [yellow]{BOOKMARKS_YAML_FILE_PATH}[/yellow]")
-with open(BOOKMARKS_YAML_FILE_PATH) as bookmarks_yaml_stream:
+with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
     file_contents = yaml.safe_load(bookmarks_yaml_stream)
     for group in file_contents["bookmarks"]:
         for bookmark in group["links"]:
