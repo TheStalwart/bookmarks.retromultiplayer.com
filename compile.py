@@ -1,5 +1,3 @@
-import glob
-import os
 import pathlib
 from urllib.parse import urlparse
 
@@ -27,14 +25,14 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
 
     # Load all template files
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_ROOT)))
-    for template_file_path in glob.glob(str(TEMPLATE_ROOT / "*.html")):
-        template_filename = os.path.basename(template_file_path)
+    for template_file_path in TEMPLATE_ROOT.glob("*.html"):
+        template_filename = template_file_path.name
         try:
             rprint(f"Processing [yellow]{template_filename}[/yellow]")
             template = env.get_template(template_filename)
             output = template.render(data=file_contents)
             output_file_path = OUTPUT_ROOT / template_filename
-            with open(output_file_path, "w", newline="") as f:
+            with output_file_path.open("w", newline="") as f:
                 f.write(output)
         except Exception as exc:
             rprint(f"[red]Error processing {template_filename}: {exc}[/red]")
