@@ -24,7 +24,7 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
     pprint(file_contents)
 
     # Load all template files
-    env = Environment(loader=FileSystemLoader(str(TEMPLATE_ROOT)))
+    env = Environment(loader=FileSystemLoader(str(TEMPLATE_ROOT)), autoescape=True)
     for template_file_path in TEMPLATE_ROOT.glob("*.html"):
         template_filename = template_file_path.name
         try:
