@@ -1,4 +1,8 @@
 {
+    "ruff.enable": true,
+    "ruff.lint.select": [
+        "ALL"
+    ],
     "[jsonc]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
@@ -16,5 +20,12 @@
         // so use VSCode built-in formatter instead
         // https://github.com/prettier/prettier/issues/5641
         "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
 }
