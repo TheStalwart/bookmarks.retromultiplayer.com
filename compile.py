@@ -24,8 +24,12 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
     file_contents = yaml.safe_load(bookmarks_yaml_stream)
     for group in file_contents["bookmarks"]:
         for bookmark in group["links"]:
+            favicon_domain = bookmark.get(
+                "favicon_domain",
+                urlparse(bookmark["url"]).netloc,
+            )
             bookmark["g_favicon_url"] = (
-                f"https://www.google.com/s2/favicons?domain={urlparse(bookmark['url']).netloc}"
+                f"https://www.google.com/s2/favicons?domain={favicon_domain}"
             )
     pprint(file_contents)
 

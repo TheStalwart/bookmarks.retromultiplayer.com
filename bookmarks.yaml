@@ -48,6 +48,7 @@ bookmarks:
     links:
       - title: Citadele
         url: https://online.citadele.lv/
+        favicon_domain: citadele.lv
       - title: Swedbank
         url: https://www.swedbank.lv/private
       - title: Luminor
@@ -63,6 +64,7 @@ bookmarks:
         url: https://www.etoro.com/portfolio
       - title: Luminor Investor
         url: https://investor.luminorgroup.com/
+        favicon_domain: luminor.lv
       - title: Mintos
         url: https://www.mintos.com/
       - title: Finviz
@@ -113,3 +115,4 @@ bookmarks:
         url: https://stats.uptimerobot.com/zbIpyqDH6z
       - title: Better Stack
         url: https://status.retromultiplayer.com/
+        favicon_domain: betterstack.com
