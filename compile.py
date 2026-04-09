@@ -31,6 +31,8 @@ with BOOKMARKS_YAML_FILE_PATH.open("r") as bookmarks_yaml_stream:
             bookmark["g_favicon_url"] = (
                 f"https://www.google.com/s2/favicons?domain={favicon_domain}"
             )
+            if not bookmark.get("favicon_url"):
+                bookmark["favicon_url"] = bookmark["g_favicon_url"]
     pprint(file_contents)
 
     # Load all template files

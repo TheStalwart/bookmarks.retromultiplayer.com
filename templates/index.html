@@ -77,7 +77,7 @@
         <h2>{{ group.group_title }}</h2>
         <ul>
             {% for link in group.links %}
-            <li style="background-image: url('{{ link.g_favicon_url }}');"><a href="{{ link.url }}">{{ link.title }}</a>
+            <li style="background-image: url('{{ link.favicon_url }}');"><a href="{{ link.url }}">{{ link.title }}</a>
             </li>
             {% endfor %}
         </ul>
