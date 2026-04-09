@@ -106,3 +106,10 @@ bookmarks:
         url: https://www.icloud.com/
       - title: Travel TODO
         url: https://www.google.com/maps/d/u/0/edit?hl=en&mid=1jDlFDh74-_vw6c31Uzu4BaKIHg9eT4BG
+
+  - group_title: DevTools
+    links:
+      - title: UptimeRobot
+        url: https://stats.uptimerobot.com/zbIpyqDH6z
+      - title: Better Stack
+        url: https://status.retromultiplayer.com/
