@@ -12,6 +12,7 @@ bookmarks:
         url: https://www.instagram.com/direct/inbox/
       - title: reddit
         url: https://old.reddit.com/
+        favicon_domain: reddit.com
       - title: Twitter
         url: https://twitter.com/
 
