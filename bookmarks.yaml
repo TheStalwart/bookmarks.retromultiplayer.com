@@ -114,6 +114,9 @@ bookmarks:
         url: https://www.accuweather.com/en/lv/riga/225780/hourly-weather-forecast/225780
       - title: iCloud
         url: https://www.icloud.com/
+      - title: Google Sheets
+        url: https://docs.google.com/spreadsheets/u/0/
+        favicon_url: https://ssl.gstatic.com/docs/spreadsheets/spreadsheets-2026-v2.ico
 
   - group_title: DevTools
     links:
