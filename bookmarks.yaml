@@ -120,3 +120,11 @@ bookmarks:
       - title: Better Stack
         url: https://status.retromultiplayer.com/
         favicon_domain: betterstack.com
+
+  - group_title: GameTools
+    links:
+      - title: Warframe Hub
+        url: https://hub.warframestat.us/
+      - title: Soulframe Cycle
+        url: https://cameronguthrie.github.io/soulframe-cycle/
+        favicon_domain: soulframe.com
