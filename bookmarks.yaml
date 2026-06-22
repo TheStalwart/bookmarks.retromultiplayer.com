@@ -118,6 +118,19 @@ bookmarks:
         url: https://docs.google.com/spreadsheets/u/0/
         favicon_url: https://ssl.gstatic.com/docs/spreadsheets/spreadsheets-2026-v2.ico
 
+  - group_title: LLMs
+    links:
+      - title: ChatGPT
+        url: https://chatgpt.com
+        favicon_url: https://chat.openai.com/favicon.ico
+      - title: Claude
+        url: https://claude.ai/
+      - title: Copilot
+        url: https://copilot.microsoft.com/
+        favicon_url: https://copilot.microsoft.com/static/cmc/favicon.ico
+      - title: Gemini
+        url: https://gemini.google.com/app
+
   - group_title: DevTools
     links:
       - title: UptimeRobot
