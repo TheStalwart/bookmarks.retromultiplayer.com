@@ -146,3 +146,8 @@ bookmarks:
       - title: Soulframe Cycle
         url: https://cameronguthrie.github.io/soulframe-cycle/
         favicon_domain: soulframe.com
+      - title: start.gg
+        url: https://www.start.gg/admin/user/10b53779/schedule
+      - title: Challonge
+        url: https://challonge.com/dashboard
+        favicon_domain: assets.challonge.com
