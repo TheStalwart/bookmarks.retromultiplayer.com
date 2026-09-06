@@ -22,6 +22,8 @@ bookmarks:
     links:
       - title: YouTube
         url: https://www.youtube.com/feed/subscriptions
+      - title: Rumble
+        url: https://rumble.com/subscriptions
       - title: Twitch
         url: https://www.twitch.tv/directory/following/live
       - title: Soundcloud
