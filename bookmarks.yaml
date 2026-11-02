@@ -118,7 +118,7 @@ bookmarks:
         url: https://www.icloud.com/
       - title: Google Sheets
         url: https://docs.google.com/spreadsheets/u/0/
-        favicon_url: https://ssl.gstatic.com/docs/spreadsheets/spreadsheets-2026-v2.ico
+        favicon_url: https://ssl.gstatic.com/docs/spreadsheets/spreadsheets-2026-v3.ico
 
   - group_title: LLMs
     links:
