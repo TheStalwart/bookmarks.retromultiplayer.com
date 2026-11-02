@@ -124,7 +124,7 @@ bookmarks:
     links:
       - title: ChatGPT
         url: https://chatgpt.com
-        favicon_url: https://chat.openai.com/favicon.ico
+        favicon_url: https://chatgpt.com/cdn/assets/favicon-dark.cdf009c235.svg
       - title: Claude
         url: https://claude.ai/
       - title: Copilot
