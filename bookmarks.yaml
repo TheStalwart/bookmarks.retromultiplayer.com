@@ -140,6 +140,9 @@ bookmarks:
       - title: Better Stack
         url: https://status.retromultiplayer.com/
         favicon_domain: betterstack.com
+      - title: New Relic
+        url: https://one.newrelic.com/
+        favicon_domain: newrelic.com
 
   - group_title: GameTools
     links:
