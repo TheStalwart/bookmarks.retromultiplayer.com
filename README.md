@@ -15,10 +15,10 @@ as custom sidebar
 
 ## Development environment
 
-Install requirements:
-`pip install -r requirements.txt`
+To create venv:
+`python3 -m venv .venv && .venv/bin/pip install --upgrade --upgrade-strategy eager -r requirements.txt`
 
 Build output from templates:
-`python compile.py`
+`.venv/bin/python compile.py`
 
 Run a HTTP server of your choice, e.g. [Five Server for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
