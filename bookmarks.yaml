@@ -10,6 +10,9 @@ bookmarks:
         url: https://www.messenger.com/
       - title: Instagram DMs
         url: https://www.instagram.com/direct/inbox/
+      - title: WhatsApp
+        url: https://web.whatsapp.com/
+        favicon_url: https://static.whatsapp.net/rsrc.php/yd/r/PfkSLByWV8O.webp
       - title: reddit
         url: https://old.reddit.com/
         favicon_domain: reddit.com
