@@ -3,6 +3,7 @@
 
 <head>
     <title>Bookmarks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
@@ -29,6 +30,23 @@
             padding: 0.6rem 0.9rem;
             border-radius: 6px;
             background: var(--msedge-toolbar-background-color);
+        }
+
+        @media (max-width: 40rem) {
+            body {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            section {
+                min-width: 0;
+            }
+        }
+
+        @media (max-width: 22rem) {
+            body {
+                grid-template-columns: minmax(0, 1fr);
+            }
         }
 
         h1 {
