@@ -6,7 +6,7 @@ bookmarks:
         favicon_url: https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico
       - title: Facebook
         url: https://www.facebook.com/
-      - title: Facebook Messenger
+      - title: FB Messenger
         url: https://www.messenger.com/
       - title: Instagram DMs
         url: https://www.instagram.com/direct/inbox/
@@ -46,7 +46,7 @@ bookmarks:
     links:
       - title: Feedly
         url: https://feedly.com/
-      - title: The Wall Street Journal
+      - title: WSJ
         url: https://www.wsj.com/
       - title: Financial Times
         url: https://www.ft.com/
@@ -94,11 +94,11 @@ bookmarks:
     links:
       - title: SS.LV
         url: https://www.ss.lv/ru/transport/cars/
-      - title: Facebook Marketplace
+      - title: FB Marketplace
         url: https://www.facebook.com/marketplace/
       - title: KurPirkt.lv
         url: https://www.kurpirkt.lv/
-      - title: Banknote Tabulator
+      - title: Banknote Tab
         url: https://banknote.retromultiplayer.com/
       - title: AliExpress
         url: https://www.aliexpress.com/p/order/index.html
